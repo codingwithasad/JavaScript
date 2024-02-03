@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Asad Mughal</title>
+</head>
+<body>
+<h1>My first WebPage</h1>
+<br>
+<img src="F:/asad.jpg" width="200" height="200" alt="Loading...">
+<img src="F:\AdobeLightroom\Asad Creations (49).jpg" align="right" width="200" height="200" alt="Image is loading...">
+<br>
+<h2>My first  WebPage</h2>

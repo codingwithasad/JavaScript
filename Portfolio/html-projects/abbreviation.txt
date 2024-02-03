@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abbreviation</title>
+</head>
+<body>
+<h1>Abbreviation Tag</h1>
+<p>My name is Asad Mughal.My college name is <acronym title="Sadiq Egerton">SE</acronym> College Bahawalpur.</p>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mark</title>
+</head>
+<body>
+ <h2>MARK   TAG</h2>
+ <pre>
+ <p>Hi,
+        My name is <mark>Asad Ali</mark>.I am from Yazman.</p>
+        </pre>
+</body>
+</html>

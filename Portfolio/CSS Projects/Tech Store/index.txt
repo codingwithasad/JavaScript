@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aafd52c1fb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Online Tech Store</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg">
+            <ul class="navlist">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="rightnav">
+                <input type="text" name="search" id="search " placeholder="Search Here">
+                <button class="btn btn-sm">Search</button>
+            </div>
+        </nav>
+    </header>
+    <section class="first-section bg" >
+        <div class="main-box">
+            <div class="first-half">
+                <h1>Future is here</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolorem totam dolorum.Lorem ipsum dolor sit amem.Voluptates dolorem totam dolorum.Lorem ipsum dolor sit amem.
+                </p>
+                <div class="buttons">
+                    <button class="btn">Buy</button>
+                    <button class="btn">View</button>
+                </div>
+            </div>
+            <div class="second-half">
+                <img src="imgs/main.png" alt="item...">
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="paras">
+        <h1 class="sec-tag">End of your search</h1>
+        <p class="sec-subtag">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi delectus minima consequatur, ullam alias necessitatibus repellat laboriosam dicta fuga voluptate numquam laudantium natus saepe ut aperiam. Et ducimus voluptatibus nobis voluptatum numquam, eligendi nostrum, eius dolorum distinctio magni quasi eos, dolorem minima. Excepturi.consequatur, ullam alias necessitatibus repellat laboriosam dicta fuga voluptate numquam laudantium natus saepe ut aperiam. Et ducimus voluptatibus nobis voluptatum numquam, eligendi nostrum, eius dolorum distinctio magni quasi eos, dolorem minima. Excepturi.</p>
+    </div>
+        <div class="thumbnail">
+            <img src="imgs/item1.jpg" alt="laptop image" class="photo">
+        </div>
+    </section>
+    <section class="sec-left">
+        <div class="paras">
+        <h1 class="sec-tag">All your favourite</h1>
+        <p class="sec-subtag">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi delectus minima consequatur, ullam alias necessitatibus repellat laboriosam dicta fuga voluptate numquam laudantium natus saepe ut aperiam. Et ducimus voluptatibus nobis voluptatum numquam, eligendi nostrum, eius dolorum distinctio magni quasi eos, dolorem minima. Excepturi.consequatur, ullam alias necessitatibus repellat laboriosam dicta fuga voluptate numquam laudantium natus saepe ut aperiam. Et ducimus voluptatibus nobis voluptatum numquam, eligendi nostrum, eius dolorum distinctio magni quasi eos, dolorem minima. Excepturi.</p>
+    </div>
+        <div class="thumbnail">
+            <img src="imgs/item2.jpg" alt="laptop image" class="photo">
+        </div>
+    </section>
+    <section class="section">
+        <div class="paras">
+        <h1 class="sec-tag">Let's grow together</h1>
+        <p class="sec-subtag">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi delectus minima consequatur, ullam alias necessitatibus repellat laboriosam dicta fuga voluptate numquam laudantium natus saepe ut aperiam. Et ducimus voluptatibus nobis voluptatum numquam, eligendi nostrum, eius dolorum distinctio magni quasi eos, dolorem minima. Excepturi.consequatur, ullam alias necessitatibus repellat laboriosam dicta fuga voluptate numquam laudantium natus saepe ut aperiam. Et ducimus voluptatibus nobis voluptatum numquam, eligendi nostrum, eius dolorum distinctio magni quasi eos, dolorem minima. Excepturi.</p>
+    </div>
+        <div class="thumbnail">
+            <img src="imgs/item3.jpg" alt="laptop image" class="photo">
+        </div>
+    </section>
+    <footer>
+        <section class="contact">
+            <h2>Follow Us</h2>
+            <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <p>All Copyrights &copy; Reserved</p>
+        </section>
+    </footer>
+</body>
+</html>

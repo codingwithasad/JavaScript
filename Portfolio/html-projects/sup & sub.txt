@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sup & Sub</title>
+</head>
+<body>
+<h2>Sup & Sub TAGS</h2>
+ <p>The formula of water is <mark>H<sub>2</sub>O </mark>.I have taken <mark>1<sup>st</sup></mark> position in my class.</p>
+</body>
+</html>

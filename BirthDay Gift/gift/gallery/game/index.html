@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fun Game</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="gif">
+          <img src="./kiss  (2).gif" alt="gif" />
+        </div>
+        <i class="fa-solid fa-heart"></i>
+        <h1 class="question">Kissie Do Gi ?</h1>
+        <div class="btn-group">
+          <button class="yes-btn btn" type="submit">Han</button>
+          <button class="no-btn btn">Noi</button>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <h1 class="msg dil">Dil Diya Gallan For You</h1>
+
+    <div class="dil-diya-gallan">
+      <p>
+        Ab keya likhu tumhari <b>Tarif</b> main tum to tarif k <b>Kabil</b> hi
+        noi ho. 😆 Lekin phir b kuch likh deta hoon qk acha
+        <b> bohat hoon na main</b> 🙂 Or tum pe ehsan b ho jayega. Bas yehi kahu
+        ga k Tum <b>Achi Dost</b> ho. 🤍 se ye baat manta hoon. Bas kabhi kabhi
+        kuch halat tum <b>Chawlien</b> aisi mar deti ho phir mera dimagh khrab
+        ho jata hai 😜 .Over all achi hoon <b>Passing</b> marks deta hoon mujhse
+        dosti k liye .Kabhi kabhi main b bohat zeyada bol jata hoon uske liye
+        <b>Sorry</b> 😥 . Tum ati to main waqai bohat <b>khush</b> hota. Tum noi
+        its OK main naraz noi hoon. Mera laptop khrab hogeya tha aik hafta pehle
+        saara data delete hogeya isy maine takriban dubara hi bnaya hai 😒 Or
+        samjh noi a raha keya likhu <b>KHUSH</b> raho or apna
+        <b>wadda munh</b> hamesha khula hi rakho. 😂 Happy birthday 🥀 to you meri <b>Wife</b>, <b>Dost</b> and <b>Sab kuch....</b><br /><br />
+        <span style="color: #4b7efe"><b> Allah Hafiz</b></span> ❤
+      </p>
+    </div>
+
+    <hr />
+
+    <h1 class="msg">Leave a message for me</h1>
+
+    <div class="feedback-msg" id="feedback-msg">
+      <form method="post" id="form" name="google-sheet">
+        <textarea
+          name="msg"
+          id=""
+          cols="60"
+          rows="5"
+          placeholder="Type your message..."
+          spellcheck="false"
+          required
+        ></textarea>
+        <a href="#feedback-msg"
+          ><button type="submit" class="send">Send</button></a
+        >
+        <p id="sent"></p>
+      </form>
+    </div>
+
+    <hr class="last-hr" />
+
+    <div class="spacer"></div>
+
+    <script>
+      const sentMsg = document.getElementById("sent");
+
+      form.addEventListener("submit", (e) => {
+        sentMsg.innerText = "Sending...";
+
+        const scriptURL =
+          "https://script.google.com/macros/s/AKfycbyJJEFap-eezJEHy2PmR4ZBRS7hMWpEYKzIccH8WWmn1WhIAUaXGvtLyalFWo8Z3nrN6w/exec";
+        const form = document.forms["google-sheet"];
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            form.reset();
+            sentMsg.innerText = "Sent";
+            setTimeout(() => {
+              sentMsg.innerText = "";
+            }, 2700);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/aafd52c1fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

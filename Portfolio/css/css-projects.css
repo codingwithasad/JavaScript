@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: rgba(0, 0, 33);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    margin: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    /* border: 1px solid #9d81ea; */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #0b102b;
+    text-align: center;
+}
+
+.box:hover {
+    background: #5c32cf;
+}
+
+.box h2 {
+    font-size: 20px;
+    margin: 52px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 24px;
+}
+
+.box .buttons .btn{
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid #9d81ea;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.box .buttons .btn:hover{
+    background: #0b102b;
+    border: #5c32cf;
+    color: #9d81ea;
+}
+
+
+
+/*      ---------DropDown-------------- */
+
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: antiquewhite;
+    width: 100%;
+    display: inline-block;
+}
+
+ 
+
+ .menu li:hover ul {
+    visibility: visible; 
+    opacity: 1;
+}
+
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 57px;
+    /* background: rgb(62, 62, 62); */
+    background: #0b102b;
+    /* width: 130px; */
+    text-align: center;
+    line-height: 32px;
+    border-radius: 0 0 6px 6px;
+    visibility: hidden;
+    opacity: 1;
+    transition: .3s opacity ease-in-out;
+}
+
+
+.submenu li:hover {
+    background: #0e1431;
+    border-radius: 0 0 6px 6px;
+}
+.submenu li:hover{
+    border: 1px solid #5c32cf;
+}
+
+
+
+/*      ---------Responsiveness--------- */
+
+
+
+
+@media screen and (max-width:700px) {
+    #lottie2{
+        margin: auto;
+        width: 50% !important;
+    }
+}
+@media screen and (max-width:600px) {
+    .box{
+        width: 150px;
+    }
+    .box h2{
+        margin: 42px;
+        font-size: 16px;
+    }
+    .box .buttons {
+        margin: 0 0 18px 0;
+    }
+    .box .buttons .btn {
+        padding: 7px 9px;
+    }
+}
+@media screen and (max-width:450px) {
+    .submenu{
+        right: -6px;
+    }
+}
+@media screen and (max-width:400px) {
+    .container{
+        margin: 20px 0;
+    }
+}

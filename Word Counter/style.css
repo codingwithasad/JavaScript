@@ -1,0 +1,39 @@
+body{
+    padding: 50px 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    text-align: center;
+    background: #006780;
+    padding: 10px;
+    color: white;
+    margin: 0;
+}
+textarea{
+    width: 99.4%;
+    border-color: #006780;
+    outline: none;
+    font-size: 20px;
+}
+p{
+    text-align: center;
+    color: white;
+    background: #006780;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+}
+span{
+    color: chartreuse;
+}
+
+
+
+
+
+
+
+
+
+

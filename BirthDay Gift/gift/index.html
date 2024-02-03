@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gift</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+
+
+        <div>
+            <h1 class="cssanimation leRotateYZoomIn random">Happy Birthday</h1>
+            <h1 class="cssanimation sequence leRotateYZoomIn">Maham</h1>
+        </div>
+
+        <div class="animation">
+            <dotlottie-player id="lottie2"
+                src="https://lottie.host/f1b99990-a8e8-4256-bb1e-13f159f6e630/88Ms0ePZRp.json" background="transparent"
+                speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+
+        </div>
+        <hr>
+        <div>
+
+
+        </div>
+
+    </div>
+    </div>
+
+
+    <div class="aud-pic">
+        <div class="audio">
+            <audio controls>
+                <source src="./WhatsApp Audio 2023-12-17 at 7.37.46 PM.mpeg">
+            </audio>
+        </div>
+        <div class="pic">
+            <a class="image-anim" href="./maham.jpg">
+                <img src="./maham.jpg">
+            </a>
+           
+        </div>
+    </div>
+
+    <hr class="second-hr">
+
+    <div class="birthday-img">
+        <a href="">
+            <!-- <img src="./Spiderman-Desktop-Wallpaper.jpg" alt=""> -->
+            <p>Asad and Maham's photo here</p>
+        </a>
+        <div class="gallery">
+            <a href='/gift/gallery/' target='_blank'>
+                <button class="gallery-btn">Maham's Gallery</button>
+                <img src="./right-arrow.png">
+            </a>
+        </div>
+    </div>
+
+    <hr class="third-hr">
+    </div>
+
+    <div class="spacer"></div>
+
+    <!------------ JavaScript------------  -->
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+    <script>
+
+        const loader = document.getElementById("loader");
+        const sent = document.getElementById("sent");
+
+        form.addEventListener('submit', e => {
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxBxqvfCRNXaXN9ayfNuz-Be0dlGO5MzXaEhsElECTo3hzgsm6Lwoz5juDwHmJT5hm0/exec'
+            const form = document.forms['google-sheet']
+
+
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+
+                    // console.log("Sent.");
+                    sent.innerHTML = "Sent"
+                    setTimeout(function () {
+                        sent.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>

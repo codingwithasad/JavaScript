@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input1</title>
+</head>
+<body>
+ <form>
+ 	Name : <input type="text" name="Name"><br><br>
+ 	Email : <input type="Email" name="Email"><br><br>
+ 	Password : <input type="password" name="Password"><br><br>
+ 	Date : <input type="date" name="date"><br>
+ 	<br>
+ 	Gender----------
+ 	<br><br>
+ 	 <input type="radio" name="Gender"> Male
+ 	 <input type="radio" name="Gender">Female
+ 	 <input type="radio" name="Gender">Other<br><br>
+ 	Languages-------- <br><br>
+ 	Urdu <input type="checkbox" name="lang">
+ 	English <input type="checkbox" name="lang">
+ 	Hindi <input type="checkbox" name="lang"><br><br>
+ 	<input type="submit" name="Submit">
+ </form>
+</body>
+</html>

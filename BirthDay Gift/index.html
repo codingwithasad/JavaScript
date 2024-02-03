@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Birthday Gift</title>
+</head>
+
+<body>
+    <h2> MOTO </h2>
+    <h1> MAHAM </h1>
+    <h3> KOJHI </h3>
+
+    <div class="loader" id="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div class="container">
+        <div class="mainBox">
+            <form method="post" id="form" name="google-sheet">
+
+                <div class="inputBox">
+
+                    <input type="text" name="inputName" id="inputName" placeholder="Type following text to see gift"
+                        required autocomplete="off" spellcheck="false">
+                    <button type="submit" id="submitbtn" name="submitbtn"> <img id="sendBtn" src="./paper-plane.png"
+                            alt="send-icon"></button>
+
+            </form>
+        </div>
+        <span id="spellchk">Khoti apne spellings check kar</span>
+        <div class="errors" id="errors">
+            <ul>
+                <li>Text should be :</li>
+                <li>Main <b>Asad</b> Ki Wife</li>
+            </ul>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+
+    <!--  JavaScript -->
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+
+        ScrollReveal({
+            reset: true,
+            distance: '50px',
+            duration: 800,
+            delay: 50
+        });
+
+        ScrollReveal().reveal('.mainBox', { origin: 'top' });
+        ScrollReveal().reveal('.errors', { origin: 'bottom' });
+
+        // Form Submition
+
+        form.addEventListener('submit', e => {
+
+            const inputName = document.getElementById("inputName");
+            const errors = document.getElementById("errors");
+            const myform = document.getElementById("form");
+            const sendBtn = document.getElementById("sendBtn");
+            const loader = document.getElementById("loader");
+            const spellchk = document.getElementById("spellchk");
+
+            e.preventDefault()
+
+            if (inputName.value != "main asad ki wife" && inputName.value != "Main Asad Ki Wife" && inputName.value != "MAIN ASAD KI WIFE") {
+                spellchk.style.display = "block";
+            }
+            else {
+
+                loader.style.display = "flex";
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbxST6dyicPVGiPct-EcwsIHSnacpHzRp9mE2gKHbGIRzGJbBzIjTy_mOaCv0OZY5tWV/exec'
+                const form = document.forms['google-sheet'];
+
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        form.reset();
+                        window.location.href = "./gift/index.html";
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

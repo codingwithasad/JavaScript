@@ -1,0 +1,24 @@
+.all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin: 0 14px;
+    padding: 0 9px;
+    height: 24px;
+    cursor: pointer;
+    background: none;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 2px ;
+
+}
+.btn:hover{
+    background: white;
+    color:  var(--bg-color);
+}
+.text-center{
+    text-align: center;
+}

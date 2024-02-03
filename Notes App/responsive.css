@@ -1,0 +1,61 @@
+@media screen and (max-width:600px) {
+    .search{
+        display: none;
+    }
+    .btn {
+        top: 42px;
+        padding: 21px 40px;
+        font-size: 16px;
+        left: 0;
+    }
+    
+    .note {
+        top: 60px;
+        width: 148px;
+        height: 135px;
+        margin: 10px;
+        margin-bottom: 0;
+    }
+    .tool {
+        height: 23px;
+    }
+
+    .note textarea {
+        font-size: 12px;
+    }
+    .tool i {
+        padding: 6px;
+        font-size: 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width:350px) {
+    .search{
+        display: none;
+    }
+    .btn {
+        top: 42px;
+        left: 0;
+        padding: 21px 40px;
+        font-size: 16px;
+    }
+
+    .note {
+        top: 60px;
+        width: 148px;
+        height: 135px;
+        margin: 10px;
+        
+    }
+    
+    .tool {
+        height: 23px;
+    }
+
+    .note textarea {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div id="clouds">
+        <div class="cloud x1"></div>
+        <!-- Time for multiple clouds to dance around -->
+        <div class="cloud x2"></div>
+        <div class="cloud x3"></div>
+        <div class="cloud x4"></div>
+        <div class="cloud x5"></div>
+    </div>
+    <div class="search">
+        <input type="text" spellcheck="false" placeholder="Enter your city name">
+        <button><img src="./imgs/search-icon.png" alt=""></button>
+    </div>
+    <div class="error">
+        <p>invalid city name</p>
+    </div>
+    <div class="weather">
+        <div class="imgs">
+            <img src="./imgs/sunny.png" alt="rain image" class="weather-icon">
+        </div>
+        <h1 id="temp">°C</h1>
+        <h1 id="city">Weather</h1>
+    </div>
+
+    <div class="details">
+        <div class="col">
+            <img src="./imgs/humidity.png" alt="">
+            <div class="text">
+                <p id="humidity">%</p>
+                <p>Humidity</p>
+            </div>
+        </div>
+        <div class="col">
+            <img src="./imgs/wind.png" alt="">
+            <div class="text">
+                <p id="wind"> km/h</p>
+                <p>Wind Speed</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="spacer"></div>
+    <footer id="footer">
+        <p>Made by Asad Mughal</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

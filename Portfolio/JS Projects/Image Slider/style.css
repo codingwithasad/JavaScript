@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0 0 3px grey;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.slide{
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    transition: all .5s;
+    border-radius: 30px;
+}
+.nav{
+    text-align: center;
+    margin: 15px;
+}
+.nav button{
+    font-size: 18px;
+    padding: 6px;
+}
+.continer{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    gap: 15px;
+}
+.dots{
+    width: 20px;
+    height: 20px;
+    background: #6c6b6b;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+}

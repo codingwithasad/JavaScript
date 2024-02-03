@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Slider</title>
+</head>
+
+<body>
+    <main>
+        <img class="slide" src="./imgs/app development cost.jpg" alt="">
+        <img class="slide" src="./imgs/goals-habits-tracking-app_23-214.png" alt="">
+        <img class="slide" src="./imgs/img_women_shopping_apps.png" alt="">
+        <img class="slide" src="./imgs/music-player-app-template-concep.png" alt="">
+    </main>
+    <div class="continer">
+        <div class="dots" onclick="dot(1)"></div>
+        <div class="dots" onclick="dot(2)"></div>
+        <div class="dots" onclick="dot(3)"></div>
+        <div class="dots you" onclick="dot(4)"></div>
+    </div>
+    <div class="nav">
+        <button onclick="gopre()">Pre</button>
+        <button onclick="gonext()">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
