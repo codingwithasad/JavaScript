@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <title>Hadees Generator</title>
+  <!-- Include Google Translate JavaScript -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+</head>
+<body>
+  <div class="text">
+    <h1>&#65021</h1>
+    <h1 id="h1"></h1>
+    <h2 id="narrator">Ahadees generateBtn</h2>
+  </div>
+  <!-- Element to be translated -->
+  <div class="container">
+    <p id="hadees">Click to generate "Hadees"
+    </p>
+  </div>
+  <div class="span">
+    <span class="speakHadees"><svg width="20" height="20" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" >
+      <path fill="#8899A6" d="M7 10s-2 0-2 2v12c0 2 2 2 2 2h6l8 8s1 1 2 1h1s1 0 1-1V2s0-1-1-1h-1c-1 0-2 1-2 1l-8 8z"/>
+      <path fill="#CCD6DD" d="m13 26l8 8s1 1 2 1h1s1 0 1-1V2s0-1-1-1h-1c-1 0-2 1-2 1l-8 8z"/>
+      <path fill="#8899A6" d="M28.709 25.959a.998.998 0 0 1-.636-1.772A7.98 7.98 0 0 0 31 18a7.968 7.968 0 0 0-2.988-6.236a1 1 0 1 1 1.254-1.558A9.96 9.96 0 0 1 33 18a9.972 9.972 0 0 1-3.657 7.731a.99.99 0 0 1-.634.228"/>
+  </svg></span>
+    <span class="muteHadees" style="display: none;"><svg width="20" height="20" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#8899A6" d="M9 10s-2 0-2 2v12c0 2 2 2 2 2h6l8 8s1 1 2 1h1s1 0 1-1V2s0-1-1-1h-1c-1 0-2 1-2 1l-8 8z"/>
+      <path fill="#CCD6DD" d="m15 26l8 8s1 1 2 1h1s1 0 1-1V2s0-1-1-1h-1c-1 0-2 1-2 1l-8 8z"/>
+      <path fill="#DD2E44" d="M31.003 33.003L3.997 5.997a1.41 1.41 0 0 1 0-1.994l.006-.006a1.41 1.41 0 0 1 1.994 0l27.006 27.006a1.41 1.41 0 0 1 0 1.994l-.006.006a1.41 1.41 0 0 1-1.994 0"/>
+  </svg></span>
+  </div>
+  <!-- Button to trigger translation -->
+  <div class="buttons">
+    <button class="btn" id="generateBtn">Generate</button>
+  <button class="btn" id="translateBtn">Translate</button>
+  </div>
+ 
+  <footer><p>All rights © reserved to <a href="https://linktr.ee/asad.code" target="_blank">Asad Mughal</a></p></footer>
+
+  <script src="app.js"></script>
+  <script src="translate-read.js"></script>
+</body>
+</html>
