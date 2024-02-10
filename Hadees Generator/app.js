@@ -15,7 +15,6 @@ async function randomHadith() {
     button.innerText = 'Generate';
   } catch (error) {
     console.error('Error fetching or parsing data:', error);
-    // You might want to handle errors, like displaying a message to the user
     button.innerText = 'Error. Try again';
   }
 }
